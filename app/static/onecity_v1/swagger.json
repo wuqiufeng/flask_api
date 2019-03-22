@@ -1,0 +1,49 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "RESTful\u63a5\u53e3",
+    "description": "RESTful API",
+    "termsOfService": "",
+    "contact": {
+      "name": "\u4ed8\u7ea2\u7af9",
+      "url": "http://mi1024.top",
+      "email": "rootfuhz@163.com"
+    }
+  },
+  "basePath": "/onecity/v1",
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "securityDefinitions": {
+    "APIToken": {
+      "type": "apiKey",
+      "in": "header",
+      "name": "X-API-TOKEN"
+    }
+  },
+  "security": [
+    {
+      "APIToken": []
+    }
+  ],
+  "paths": {
+    "/users": {
+      "get": {
+        "tags": [
+          "\u6d4b\u8bd5"
+        ],
+        "summary": "\u83b7\u53d6\u7528\u6237\u5217\u8868",
+        "description": "\u63cf\u8ff0",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+}

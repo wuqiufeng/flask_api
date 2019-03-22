@@ -1,0 +1,41 @@
+swagger: '2.0'
+info:
+  version:  1.0.0
+  title: RESTful接口
+  description: RESTful API
+  termsOfService: ""
+  contact:
+    name: 付红竹
+    url: http://mi1024.top
+    email: rootfuhz@163.com
+
+host: localhost:8520
+basePath: /onecity/v1
+schemes:
+  - https
+  - http
+
+consumes:
+  - application/json
+produces:
+  - application/json
+
+securityDefinitions:
+  APIToken:
+    type: apiKey
+    in: header
+    name: X-API-TOKEN
+security:
+  - APIToken: []
+
+
+paths:
+  /users:
+    get:
+      tags:
+      - 测试
+      summary: 获取用户列表
+      description: 描述
+      responses:
+        200:
+          description: OK
