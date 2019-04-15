@@ -1,0 +1,92 @@
+swagger: '3.0'
+info:
+  version:  1.0.0
+  title: RESTful接口
+  description: RESTful API
+  termsOfService: ""
+  contact:
+    name: 付红竹
+    url: http://mi1024.top
+    email: rootfuhz@163.com
+
+host: localhost:8520
+basePath: /onecity/v1
+schemes:
+  - https
+  - http
+
+consumes:
+  - application/json
+produces:
+  - application/json
+
+securityDefinitions:
+  APIToken:
+    type: apiKey
+    in: header
+    name: X-API-TOKEN
+
+security:
+  - ApiSecurity: []
+
+definitions:
+  ApiResponse:
+    type: object
+    properties:
+      error_code:
+        type: integer
+      data:
+        type: string
+      msg:
+        type: string
+
+
+  ErrorResponse:
+    type: object
+    properties:
+      error_code:
+        type: integer
+      msg:
+        type: string
+      request:
+        type: string
+
+
+
+paths:
+  /users:
+    post:
+      tags:
+        - 测试
+      summary: 测试用户列表
+      parameters:
+        - name: video
+          in: body
+          description: 测试参赛
+          schema:
+            required:
+              - lastName
+            properties:
+              firstName:
+                type: string
+              lastName:
+                type: string
+      description: 描述
+      responses:
+        200:
+          description: OK
+
+    get:
+      tags:
+      - 获取用户列表
+      summary: 测试返回数据
+      responses:
+        200:
+          description: 操作成功
+          schema:
+            $ref: '#/definitions/ApiResponse'
+        400:
+          description: 请求成功，但是业务失败
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+

@@ -1,5 +1,5 @@
 {
-  "swagger": "2.0",
+  "swagger": "3.0",
   "info": {
     "version": "1.0.0",
     "title": "RESTful\u63a5\u53e3",
@@ -27,20 +27,90 @@
   },
   "security": [
     {
-      "APIToken": []
+      "ApiSecurity": []
     }
   ],
+  "definitions": {
+    "ApiResponse": {
+      "type": "object",
+      "properties": {
+        "error_code": {
+          "type": "integer"
+        },
+        "data": {
+          "type": "string"
+        },
+        "msg": {
+          "type": "string"
+        }
+      }
+    },
+    "ErrorResponse": {
+      "type": "object",
+      "properties": {
+        "error_code": {
+          "type": "integer"
+        },
+        "msg": {
+          "type": "string"
+        },
+        "request": {
+          "type": "string"
+        }
+      }
+    }
+  },
   "paths": {
     "/users": {
-      "get": {
+      "post": {
         "tags": [
           "\u6d4b\u8bd5"
         ],
-        "summary": "\u83b7\u53d6\u7528\u6237\u5217\u8868",
+        "summary": "\u6d4b\u8bd5\u7528\u6237\u5217\u8868",
+        "parameters": [
+          {
+            "name": "video",
+            "in": "body",
+            "description": "\u6d4b\u8bd5\u53c2\u8d5b",
+            "schema": {
+              "required": [
+                "lastName"
+              ],
+              "properties": {
+                "firstName": {
+                  "type": "string"
+                },
+                "lastName": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
         "description": "\u63cf\u8ff0",
         "responses": {
           "200": {
             "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "\u83b7\u53d6\u7528\u6237\u5217\u8868"
+        ],
+        "summary": "\u6d4b\u8bd5\u8fd4\u56de\u6570\u636e",
+        "responses": {
+          "200": {
+            "description": "\u64cd\u4f5c\u6210\u529f",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "400": {
+            "description": "\u8bf7\u6c42\u6210\u529f\uff0c\u4f46\u662f\u4e1a\u52a1\u5931\u8d25",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
           }
         }
       }

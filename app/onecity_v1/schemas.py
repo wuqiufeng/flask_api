@@ -50,13 +50,15 @@ class RefNode(object):
 
 base_path = '/onecity/v1'
 
-definitions = {'definitions': {}, 'parameters': {}}
+definitions = {'definitions': {'ApiResponse': {'type': 'object', 'properties': {'error_code': {'type': 'integer'}, 'data': {'type': 'string'}, 'msg': {'type': 'string'}}}, 'ErrorResponse': {'type': 'object', 'properties': {'error_code': {'type': 'integer'}, 'msg': {'type': 'string'}, 'request': {'type': 'string'}}}}, 'parameters': {}}
 
 validators = {
+    ('users', 'POST'): {'json': {'required': ['lastName'], 'properties': {'firstName': {'type': 'string'}, 'lastName': {'type': 'string'}}}},
 }
 
 filters = {
-    ('users', 'GET'): {200: {'headers': None, 'schema': None}},
+    ('users', 'POST'): {200: {'headers': None, 'schema': None}},
+    ('users', 'GET'): {200: {'headers': None, 'schema': {'$ref': '#/definitions/ApiResponse'}}, 400: {'headers': None, 'schema': {'$ref': '#/definitions/ErrorResponse'}}},
 }
 
 scopes = {
