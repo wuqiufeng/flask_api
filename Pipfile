@@ -9,6 +9,9 @@ verify_ssl = true
 flask = "*"
 swagger-py-codegen = "*"
 flask-restful = "*"
+flask-sqlalchemy = "*"
+flask-migrate = "*"
+pymysql = "*"
 
 [requires]
 python_version = "3.6"

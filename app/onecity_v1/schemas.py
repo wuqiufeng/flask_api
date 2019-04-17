@@ -50,15 +50,14 @@ class RefNode(object):
 
 base_path = '/onecity/v1'
 
-definitions = {'definitions': {'ApiResponse': {'type': 'object', 'properties': {'error_code': {'type': 'integer'}, 'data': {'type': 'string'}, 'msg': {'type': 'string'}}}, 'ErrorResponse': {'type': 'object', 'properties': {'error_code': {'type': 'integer'}, 'msg': {'type': 'string'}, 'request': {'type': 'string'}}}}, 'parameters': {}}
+definitions = {'definitions': {'ApiResponse': {'properties': {'error_code': {'type': 'integer'}, 'data': {'type': 'string'}, 'msg': {'type': 'string'}}}, 'ErrorResponse': {'type': 'object', 'properties': {'error_code': {'type': 'integer'}, 'msg': {'type': 'string'}, 'request': {'type': 'string'}}}}, 'parameters': {}}
 
 validators = {
-    ('users', 'POST'): {'json': {'required': ['lastName'], 'properties': {'firstName': {'type': 'string'}, 'lastName': {'type': 'string'}}}},
+    ('register', 'POST'): {'json': {'properties': {'nickname': {'type': 'string', 'minLength': 2, 'maxLength': 16}, 'password': {'type': 'string', 'pattern': '^[A-Za-z0-9_*&$#@]{6,22}$', 'minLength': 6, 'maxLength': 24}}}},
 }
 
 filters = {
-    ('users', 'POST'): {200: {'headers': None, 'schema': None}},
-    ('users', 'GET'): {200: {'headers': None, 'schema': {'$ref': '#/definitions/ApiResponse'}}, 400: {'headers': None, 'schema': {'$ref': '#/definitions/ErrorResponse'}}},
+    ('register', 'POST'): {200: {'headers': None, 'schema': {'$ref': '#/definitions/ApiResponse'}}},
 }
 
 scopes = {

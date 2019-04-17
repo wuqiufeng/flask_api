@@ -5,10 +5,12 @@ from http.client import HTTPException
 import six
 from flask import current_app, request, json, g
 from flask_restful import unpack, abort
+from werkzeug.datastructures import MultiDict
 
-from app.libs.error_code import AuthFailed, APIException
-from app.onecity_v1.schemas import filters, normalize, resolver
-from app.onecity_v1.validators import JSONEncoder
+from app import service_logger, error_logger
+from app.libs.error_code import AuthFailed, APIException, UnknownException, UnprocessableException
+from app.onecity_v1.schemas import filters, normalize, resolver, scopes, validators, security
+from app.onecity_v1.validators import JSONEncoder, FlaskValidatorAdaptor
 
 
 class Token():
@@ -16,6 +18,32 @@ class Token():
         self.value = token_value
 
 
+def request_validate(view):
+    @wraps(view)
+    def wrapper(*args, **kwargs):
+        endpoint = request.endpoint.partition('.')[-1]
+        # scope
+        if (endpoint, request.method) in scopes and not set(
+                scopes[(endpoint, request.method)]).issubset(set(security.scopes)):
+            abort(403)
+        # data
+        method = request.method
+        if method == 'HEAD':
+            method = 'GET'
+        locations = validators.get((endpoint, method), {})
+        for location, schema in six.iteritems(locations):
+            value = getattr(request, location, MultiDict())
+            if value is None:
+                value = MultiDict()
+            validator = FlaskValidatorAdaptor(schema)
+            result, errors = validator.validate(value)
+            if errors:
+                error_logger.error(_request_log(request))
+                raise UnprocessableException()
+            setattr(g, location, result)
+        return view(*args, **kwargs)
+
+    return wrapper
 
 
 def response_filter(view):
@@ -68,28 +96,35 @@ def response_filter(view):
     return wrapper
 
 
-
 def api_logger(view):
     @wraps(view)
     def wrapper(*args, **kwargs):
         try:
             if "X-API-TOKEN" in request.headers:
                 setattr(g, "token", Token(request.headers["X-API-TOKEN"]))
-            # service_logger.info(_request_log(request))
+            print('try')
+            service_logger.info(_request_log(request))
             return view(*args, **kwargs)
-        except HTTPException as h:
-            # service_logger.warning("<Response [{}]>".format(h))
-            raise h
-        except Exception as e:
-        #     service_logger.critical("<Response [500 Internal Server Error]>")
-        #     error_logger.error(_request_log(request))
-        #     error_logger.error(e, exc_info=True)
+        except APIException as e:
+            print('api')
+            service_logger.warning("<Response [{}] >".format(e))
             raise e
+        except HTTPException as e:
+            code = e.code
+            msg = e.description
+            error_code = 20000
+            service_logger.warning("<Response [{}]>".format(e))
+            raise APIException(msg, code, error_code)
+        except Exception as e:
+            # print('eeee')
+            service_logger.critical("<Response [500 Internal Server Error]>")
+            error_logger.error(_request_log(request))
+            error_logger.error(e, exc_info=True)
+            raise UnknownException()
 
     return wrapper
 
 
-# Decorator for API authentication
 def authentication(view):
     @wraps(view)
     def wrapper(*args, **kwargs):
@@ -98,9 +133,26 @@ def authentication(view):
 
         if g.token.value != 'aabbcc':
             raise AuthFailed("您的身份认证已经失效， 请重新登录")
-
-        # if g.token.value != redis_client.get("token:{}".format(g.token.name)):
-        #     raise AuthFailed("您的身份认证已经失效， 请重新登录")
         return view(*args, **kwargs)
 
     return wrapper
+
+
+def _request_log(request):
+    data = 'Request({}): [{}] {} Args: {} Body: {}'.format(
+        _get_requester(request),
+        request.method,
+        request.full_path,
+        request.args.to_dict(),
+        request.json
+    )
+    return data
+
+
+def _get_requester(request):
+    requester = request.remote_addr
+    try:
+        if hasattr(g, 'token'):
+            requester = g.token.name
+    finally:
+        return requester

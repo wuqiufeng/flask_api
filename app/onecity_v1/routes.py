@@ -8,9 +8,9 @@
 ###
 from __future__ import absolute_import
 
-from .api.users import Users
+from .api.register import Register
 
 
 routes = [
-    dict(resource=Users, urls=['/users'], endpoint='users'),
+    dict(resource=Register, urls=['/register'], endpoint='register'),
 ]

@@ -12,13 +12,13 @@ info:
 host: localhost:8520
 basePath: /onecity/v1
 schemes:
-  - https
-  - http
+- https
+- http
 
 consumes:
-  - application/json
+- application/json
 produces:
-  - application/json
+- application/json
 
 securityDefinitions:
   APIToken:
@@ -27,11 +27,10 @@ securityDefinitions:
     name: X-API-TOKEN
 
 security:
-  - ApiSecurity: []
+- APIToken: []
 
 definitions:
   ApiResponse:
-    type: object
     properties:
       error_code:
         type: integer
@@ -54,39 +53,35 @@ definitions:
 
 
 paths:
-  /users:
+  /register:
     post:
       tags:
-        - 测试
-      summary: 测试用户列表
+        - 用户
+      summary: 注册新用户
+      security: []
       parameters:
-        - name: video
+        - name: user
           in: body
-          description: 测试参赛
+          descriptiom: 创建用户
           schema:
-            required:
-              - lastName
             properties:
-              firstName:
+              nickname:
                 type: string
-              lastName:
+                minLength: 2
+                maxLength: 16
+              password:
                 type: string
-      description: 描述
-      responses:
-        200:
-          description: OK
+                pattern: ^[A-Za-z0-9_*&$#@]{6,22}$
+                minLength: 6
+                maxLength: 24
 
-    get:
-      tags:
-      - 获取用户列表
-      summary: 测试返回数据
       responses:
         200:
           description: 操作成功
           schema:
             $ref: '#/definitions/ApiResponse'
-        400:
-          description: 请求成功，但是业务失败
+        default:
+          description: 操作异常,执行失败.返回信息描述错误详情
           schema:
             $ref: '#/definitions/ErrorResponse'
 

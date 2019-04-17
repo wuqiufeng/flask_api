@@ -48,10 +48,19 @@ class APIException(HTTPException):
         return [('Content-Type', 'application/json')]
 
 
-class Success(APIException):
-    code = 200
+class Success(HTTPException):
+    code = 201
     msg = '成功'
     error_code = 0
+
+    def __init__(self, msg=None, code=None, error_code=None):
+        if code:
+            self.code = code
+        if error_code:
+            self.error_code = error_code
+        if msg:
+            self.msg = msg
+        super(Success, self).__init__(msg)
 
 
 class Failed(APIException):
@@ -89,6 +98,11 @@ class ExpiredTokenException(APIException):
     msg = '令牌过期'
     error_code = 10050
 
+class UnprocessableException(APIException):
+    code = 422
+    msg = '参数'
+    error_code = 10060
+
 
 class UnknownException(APIException):
     code = 400
@@ -106,3 +120,9 @@ class Forbidden(APIException):
     code = 401
     msg = '不可操作'
     error_code = 10070
+
+
+if __name__ == '__main__':
+    aa = UnknownException()
+
+    print(aa.msg)
