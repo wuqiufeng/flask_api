@@ -2,6 +2,7 @@ from sqlalchemy import Column, Integer, String, SmallInteger, FetchedValue, Fore
 from sqlalchemy.orm import relationship
 from werkzeug.security import generate_password_hash, check_password_hash
 
+from app.libs.error_code import NotFound, AuthFailed
 from app.models.base import InfoCrud as Base
 
 
@@ -41,14 +42,26 @@ class User(Base):
     def password(self, raw):
         self._password = generate_password_hash(raw)
 
-    @staticmethod
-    def find_user(**kwargs):
-        return User.query.filter_by(**kwargs).first()
-
     def check_password(self, raw):
         if not self._password:
             return False
         return check_password_hash(self._password, raw)
+
+    @classmethod
+    def find_user(cls, nickname):
+        return cls.query.filter_by(nickname=nickname).first()
+
+    @classmethod
+    def verify(cls, nickname, password):
+        user = cls.query.filter_by(nickname=nickname).first()
+        if user is None:
+            raise NotFound(msg='用户不存在')
+        if not user.check_password(password):
+            raise AuthFailed(msg='密码错误，请输入正确密码')
+        return user
+
+
+
 
 
 class UserAuth(Base):

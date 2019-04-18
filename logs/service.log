@@ -1,405 +1,128 @@
-2019-04-17 10:58:17 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 10:58:17 decorators.py[line:85] service(WARNING): <Response [401 Unauthorized: Token not found]>
-2019-04-17 11:07:45 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:07:45 decorators.py[line:85] service(WARNING): <Response [401 Unauthorized: Token not found]>
-2019-04-17 11:08:13 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:08:13 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:09:34 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:09:34 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:10:34 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:10:34 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:11:12 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:11:12 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:12:25 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:12:25 decorators.py[line:85] service(WARNING): <Response [404 Not Found: 为妨碍西安]>
-2019-04-17 11:21:11 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:21:37 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:21:37 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:24:08 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:24:08 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:24:10 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:24:10 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:24:58 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:24:58 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:24:59 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:24:59 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:25:45 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:25:45 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:25:48 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:25:48 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:25:48 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:25:48 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:25:49 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:25:49 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:25:49 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:25:49 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:25:49 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:25:49 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:25:49 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:25:49 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:25:50 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:25:50 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:26:09 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:26:09 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:26:10 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:26:10 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:26:11 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:26:11 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:26:11 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:26:11 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 11:28:25 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 11:28:25 decorators.py[line:85] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 12:48:13 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 12:48:13 decorators.py[line:88] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 12:50:05 decorators.py[line:76] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 12:50:05 decorators.py[line:85] service(WARNING): <Response [401 Unauthorized: Token not found]>
-2019-04-17 12:55:49 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 12:55:49 decorators.py[line:114] service(WARNING): <Response [401 Unauthorized: Token not found]>
-2019-04-17 12:56:45 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 12:56:45 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 12:56:57 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 12:56:57 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 12:57:19 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 12:57:19 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 12:58:18 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 12:58:18 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:00:32 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:00:49 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:00:49 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:00:57 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:01:01 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:01:22 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:06:58 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:07:54 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:07:54 decorators.py[line:114] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 13:08:14 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:13:47 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:13:59 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:14:11 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:14:11 decorators.py[line:114] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 13:15:03 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:15:03 decorators.py[line:114] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 13:15:04 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:15:04 decorators.py[line:114] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 13:15:54 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:15:54 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:16:04 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:16:04 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:17:29 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:17:29 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:17:30 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:17:30 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:17:51 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:17:51 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:18:18 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:18:18 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:21:31 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:21:31 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:21:32 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:21:32 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:21:48 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:21:48 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:21:52 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:21:52 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:22:27 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:22:27 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 13:26:23 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 13:26:23 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:04:21 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:04:22 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:05:37 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:05:37 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:05:46 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:06:23 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:06:23 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:06:56 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:06:56 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:08:18 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:08:18 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:08:37 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:08:37 decorators.py[line:114] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 14:08:45 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:08:45 decorators.py[line:114] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 14:09:12 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:09:12 decorators.py[line:114] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 14:10:21 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:21 decorators.py[line:114] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 14:10:23 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:23 decorators.py[line:114] service(WARNING): <Response [404 Not Found: None]>
-2019-04-17 14:10:30 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:30 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:42 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:42 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:42 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:42 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:43 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:43 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:44 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:44 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:45 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:45 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:45 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:45 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:58 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:58 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:58 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:58 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:59 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:59 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:59 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:59 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:10:59 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:10:59 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:11:00 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:11:00 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:11:00 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:11:00 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:11:00 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:11:00 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:11:00 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:11:00 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:11:00 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:11:00 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:11:07 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:11:07 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:11:41 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:11:41 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:12:24 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:12:24 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:13:11 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:13:11 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:13:30 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:13:30 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:18:59 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:18:59 decorators.py[line:117] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:19:22 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:19:22 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:19:28 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:19:28 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:19:49 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:19:49 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:20:16 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:20:16 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:21:10 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:22:00 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:22:36 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:22:49 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:24:09 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:24:10 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:25:42 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:26:07 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:26:40 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:27:02 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:28:22 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:28:46 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:31:27 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:38:23 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:40:02 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:41:04 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:41:04 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:42:03 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:42:03 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:42:28 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:46:24 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:47:23 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:47:24 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:47:25 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:54:50 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:54:50 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:55:44 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:55:44 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:56:07 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:56:07 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:56:08 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:56:08 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:56:54 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:56:54 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:57:17 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:57:17 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:57:27 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:57:27 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:57:53 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:57:53 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:58:34 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 14:58:34 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 14:59:17 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:00:02 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:00:47 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:02:21 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:03:40 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:03:41 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:03:41 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:03:42 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:03:42 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:03:42 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:04:57 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:04:58 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:49:12 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:49:39 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:53:08 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:53:24 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 15:54:45 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:02:48 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:03:30 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:03:31 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:03:32 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:03:32 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:03:32 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:08 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:08 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:09 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:09 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:09 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:09 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:09 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:53 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:53 decorators.py[line:116] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 16:18:57 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:18:57 decorators.py[line:116] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 16:19:24 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:28:57 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:28:57 decorators.py[line:112] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:30:47 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:30:47 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:31:00 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:31:00 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:31:18 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:31:18 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:31:51 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:31:51 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:32:10 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:32:10 decorators.py[line:108] service(WARNING): <Response [408 Request Timeout: 用户名重复，请重新输入]>
-2019-04-17 16:38:11 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:38:12 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:38:49 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:38:49 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:39:12 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:39:12 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:40:16 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:41:05 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:41:05 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:51:20 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 16:51:21 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 16:51:30 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:05:06 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:05:24 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:29:42 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:29:43 decorators.py[line:118] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 17:30:02 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:30:02 decorators.py[line:118] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 17:31:07 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:31:07 decorators.py[line:118] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 17:31:16 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:31:16 decorators.py[line:118] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 17:31:53 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:31:53 decorators.py[line:118] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 17:32:19 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:32:19 decorators.py[line:118] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 17:33:59 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:33:59 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 17:34:11 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:35:32 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:35:33 decorators.py[line:108] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入]>
-2019-04-17 17:35:50 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:42:27 decorators.py[line:105] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 17:42:27 decorators.py[line:118] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:04:53 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:04:53 decorators.py[line:109] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:05:57 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:05:57 decorators.py[line:119] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:06:30 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:06:30 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:06:33 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:06:33 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:06:45 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:06:45 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:08:04 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:08:04 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:08:07 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:08:07 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:08:11 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:08:11 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:08:12 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:08:12 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:08:13 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:08:13 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:08:20 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:08:20 decorators.py[line:110] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:08:34 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:08:34 decorators.py[line:109] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:19:09 decorators.py[line:109] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:19:09 decorators.py[line:43] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:19:09 decorators.py[line:112] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:21:00 decorators.py[line:109] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:21:00 decorators.py[line:112] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:21:37 decorators.py[line:110] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:21:37 decorators.py[line:113] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:22:51 decorators.py[line:110] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:22:51 decorators.py[line:43] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:22:51 decorators.py[line:113] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:24:13 decorators.py[line:110] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:24:13 decorators.py[line:43] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:24:13 decorators.py[line:113] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:25:24 decorators.py[line:108] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:25:24 decorators.py[line:111] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:45:30 decorators.py[line:108] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:45:30 decorators.py[line:111] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:47:53 decorators.py[line:110] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:47:53 decorators.py[line:114] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:48:31 decorators.py[line:110] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:48:31 decorators.py[line:114] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:50:37 decorators.py[line:111] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:50:37 decorators.py[line:115] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:51:12 decorators.py[line:111] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:51:12 decorators.py[line:115] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:52:09 decorators.py[line:111] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:52:09 decorators.py[line:115] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 18:59:29 decorators.py[line:113] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:59:29 decorators.py[line:128] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 18:59:52 decorators.py[line:113] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 18:59:52 decorators.py[line:128] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 19:01:05 decorators.py[line:113] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:01:05 decorators.py[line:128] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 19:02:01 decorators.py[line:113] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:02:01 decorators.py[line:128] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 19:02:38 decorators.py[line:113] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:02:38 decorators.py[line:128] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 19:04:39 decorators.py[line:113] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:04:39 decorators.py[line:128] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 19:05:09 decorators.py[line:113] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:05:09 decorators.py[line:128] service(CRITICAL): <Response [500 Internal Server Error]>
-2019-04-17 19:06:55 decorators.py[line:139] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:07:03 decorators.py[line:139] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:07:03 decorators.py[line:143] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:08:48 decorators.py[line:139] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:08:48 decorators.py[line:143] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:09:22 decorators.py[line:140] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:09:22 decorators.py[line:144] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:12:00 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:12:00 decorators.py[line:111] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:13:59 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:13:59 decorators.py[line:111] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:14:11 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:14:11 decorators.py[line:111] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:14:35 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:14:35 decorators.py[line:111] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:15:13 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] Args: /onecity/v1/register? Body: {}
-2019-04-17 19:15:13 decorators.py[line:111] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:16:19 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:16:19 decorators.py[line:111] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:20:12 decorators.py[line:107] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:20:12 decorators.py[line:111] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:25:09 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:25:09 decorators.py[line:110] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:25:26 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:25:26 decorators.py[line:110] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:25:33 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:25:33 decorators.py[line:110] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:25:49 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:25:49 decorators.py[line:110] service(WARNING): <Response [422 Unprocessable Entity: None]>
-2019-04-17 19:30:47 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:31:29 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:31:29 decorators.py[line:110] service(WARNING): <Response [422 Unprocessable Entity: None] [参数] [10060]>
-2019-04-17 19:33:40 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:34:09 decorators.py[line:106] service(INFO): Request(192.168.0.39): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'g'}
-2019-04-17 19:34:09 decorators.py[line:110] service(WARNING): <Response [422 Unprocessable Entity: None] >
+2019-04-18 09:46:32 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'super', 'password': 'super'}
+2019-04-18 09:46:32 decorators.py[line:110] service(WARNING): <Response [422 Unprocessable Entity: None] >
+2019-04-18 09:46:49 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'super', 'password': '123456'}
+2019-04-18 10:23:52 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/register? Args: {} Body: {'nickname': '付红竹', 'password': '123456'}
+2019-04-18 10:28:55 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:28:55 decorators.py[line:110] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入] >
+2019-04-18 10:29:37 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:29:38 decorators.py[line:110] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入] >
+2019-04-18 10:30:10 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:30:10 decorators.py[line:110] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入] >
+2019-04-18 10:30:43 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:30:43 decorators.py[line:110] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入] >
+2019-04-18 10:31:43 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:31:43 decorators.py[line:110] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入] >
+2019-04-18 10:31:56 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:31:57 decorators.py[line:110] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入] >
+2019-04-18 10:32:33 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:32:34 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 10:33:03 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:33:03 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 10:33:13 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:33:13 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 10:34:17 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:34:18 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 10:34:38 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 10:34:38 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 17:12:27 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/register? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 17:12:28 decorators.py[line:110] service(WARNING): <Response [400 Bad Request: 用户名重复，请重新输入] >
+2019-04-18 17:51:49 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 17:51:50 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 17:54:32 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 17:57:07 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 17:57:08 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 17:58:09 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 17:58:10 decorators.py[line:120] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 17:58:39 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 17:58:45 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 17:59:20 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string123'}
+2019-04-18 17:59:20 decorators.py[line:110] service(WARNING): <Response [401 Unauthorized: 密码错误，请输入正确密码] >
+2019-04-18 17:59:27 decorators.py[line:106] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'stri', 'password': 'string123'}
+2019-04-18 17:59:27 decorators.py[line:110] service(WARNING): <Response [404 Not Found: 用户不存在] >
+2019-04-18 18:47:19 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:47:20 decorators.py[line:140] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 18:48:48 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:48:48 decorators.py[line:140] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 18:49:21 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:49:22 decorators.py[line:140] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 18:49:53 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:49:53 decorators.py[line:140] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 18:50:33 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:50:34 decorators.py[line:140] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 18:51:19 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:53:32 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:53:32 decorators.py[line:140] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 18:54:45 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:54:59 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:55:10 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:56:04 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:56:28 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 18:59:09 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 19:00:07 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 19:04:49 decorators.py[line:126] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:04:49 decorators.py[line:130] service(WARNING): <Response [401 Unauthorized: Token not found] >
+2019-04-18 19:05:10 decorators.py[line:126] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 19:07:50 decorators.py[line:126] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:07:50 decorators.py[line:130] service(WARNING): <Response [401 Unauthorized: Token not found] >
+2019-04-18 19:08:05 decorators.py[line:126] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:08:05 decorators.py[line:140] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:09:18 decorators.py[line:126] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:09:18 decorators.py[line:140] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:09:51 decorators.py[line:127] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:09:51 decorators.py[line:141] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:12:10 decorators.py[line:127] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:12:10 decorators.py[line:141] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:12:39 decorators.py[line:127] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:12:39 decorators.py[line:141] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:13:05 decorators.py[line:127] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 19:13:23 decorators.py[line:127] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:13:23 decorators.py[line:141] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:13:55 decorators.py[line:127] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:13:55 decorators.py[line:141] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:14:45 decorators.py[line:127] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:14:45 decorators.py[line:141] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:15:13 decorators.py[line:127] service(INFO): Request(192.168.0.38): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:15:13 decorators.py[line:141] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:17:54 decorators.py[line:132] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:17:54 decorators.py[line:136] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:19:05 decorators.py[line:132] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:19:05 decorators.py[line:136] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:21:17 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:21:17 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:22:04 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:22:04 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:30:31 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:30:31 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:30:42 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:30:42 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:33:56 decorators.py[line:129] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 19:34:59 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:34:59 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:35:13 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:35:13 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:35:58 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:35:58 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:36:56 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:36:56 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:39:32 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:39:32 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:40:13 decorators.py[line:129] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 19:44:48 decorators.py[line:129] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 19:44:49 decorators.py[line:143] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:45:09 decorators.py[line:129] service(INFO): Request(192.168.0.38): [POST] /onecity/v1/login? Args: {} Body: {'nickname': 'string', 'password': 'string'}
+2019-04-18 19:45:25 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:45:25 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:45:41 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:45:41 decorators.py[line:133] service(WARNING): <Response [401 Unauthorized: 您的身份认证已经失效， 请重新登录] >
+2019-04-18 19:49:54 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:51:38 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:52:17 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:54:14 decorators.py[line:129] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:54:14 decorators.py[line:143] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 19:55:47 decorators.py[line:130] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 19:55:47 decorators.py[line:144] service(CRITICAL): <Response [500 Internal Server Error]>
+2019-04-18 20:03:22 decorators.py[line:130] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 20:04:05 decorators.py[line:130] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 20:04:40 decorators.py[line:130] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 20:04:55 decorators.py[line:130] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None
+2019-04-18 20:08:53 decorators.py[line:130] service(INFO): Request(7:string): [GET] /onecity/v1/user/information? Args: {} Body: None

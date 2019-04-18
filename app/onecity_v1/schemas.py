@@ -54,10 +54,13 @@ definitions = {'definitions': {'ApiResponse': {'properties': {'error_code': {'ty
 
 validators = {
     ('register', 'POST'): {'json': {'properties': {'nickname': {'type': 'string', 'minLength': 2, 'maxLength': 16}, 'password': {'type': 'string', 'pattern': '^[A-Za-z0-9_*&$#@]{6,22}$', 'minLength': 6, 'maxLength': 24}}}},
+    ('login', 'POST'): {'json': {'properties': {'nickname': {'type': 'string'}, 'password': {'type': 'string'}}}},
 }
 
 filters = {
     ('register', 'POST'): {200: {'headers': None, 'schema': {'$ref': '#/definitions/ApiResponse'}}},
+    ('login', 'POST'): {200: {'headers': None, 'schema': {'$ref': '#/definitions/ApiResponse'}}},
+    ('user_information', 'GET'): {200: {'headers': None, 'schema': {'$ref': '#/definitions/ApiResponse'}}},
 }
 
 scopes = {

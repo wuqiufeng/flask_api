@@ -1,5 +1,6 @@
 import json
 import datetime
+import redis
 from flask_sqlalchemy import SQLAlchemy as _SQLAlchemy, BaseQuery
 from sqlalchemy import inspect, orm, func, create_engine, event
 from contextlib import contextmanager
@@ -7,7 +8,7 @@ from sqlalchemy.exc import DisconnectionError
 from sqlalchemy.orm import sessionmaker
 
 from app.libs.error_code import NotFound
-
+from config import config
 
 
 class SQLAlchemy(_SQLAlchemy):
@@ -90,11 +91,11 @@ class MixinJSONSerializer:
 
 
 
-from config import config
+
 
 SETTINGS = config["default"]
-# redis_pool = redis.ConnectionPool(host=SETTINGS.REDIS_HOST, port=SETTINGS.REDIS_PORT, db=0, password=SETTINGS.REDIS_PASSWD, encoding='utf-8')
-# redis_client = redis.Redis(connection_pool=redis_pool)
+redis_pool = redis.ConnectionPool(host=SETTINGS.REDIS_HOST, port=SETTINGS.REDIS_PORT, db=0, password=SETTINGS.REDIS_PASSWD, encoding='utf-8', decode_responses=True)
+redis_client = redis.Redis(connection_pool=redis_pool)
 
 class CommonJsonEncoder(json.JSONEncoder):
     def default(self, o):

@@ -2,6 +2,7 @@ import logging.config
 import os
 from flask_migrate import Migrate
 from flask import Flask
+from itsdangerous import TimedJSONWebSignatureSerializer
 
 from app.models import db
 from config import Config
@@ -38,3 +39,8 @@ def create_app(config_class=Config):
 
 service_logger = logging.getLogger(name='service')
 error_logger = logging.getLogger(name='error')
+
+jwt = TimedJSONWebSignatureSerializer(
+    secret_key=Config.JWT_SECRET_KEY,
+    expires_in=Config.JWT_EXP_TIME,
+)

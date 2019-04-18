@@ -71,7 +71,7 @@
           {
             "name": "user",
             "in": "body",
-            "descriptiom": "\u521b\u5efa\u7528\u6237",
+            "description": "\u521b\u5efa\u7528\u6237",
             "schema": {
               "properties": {
                 "nickname": {
@@ -89,6 +89,68 @@
             }
           }
         ],
+        "responses": {
+          "200": {
+            "description": "\u64cd\u4f5c\u6210\u529f",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "default": {
+            "description": "\u64cd\u4f5c\u5f02\u5e38,\u6267\u884c\u5931\u8d25.\u8fd4\u56de\u4fe1\u606f\u63cf\u8ff0\u9519\u8bef\u8be6\u60c5",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/login": {
+      "post": {
+        "tags": [
+          "\u7528\u6237"
+        ],
+        "summary": "\u767b\u9646",
+        "security": [],
+        "parameters": [
+          {
+            "name": "user",
+            "in": "body",
+            "description": "\u767b\u9646",
+            "schema": {
+              "properties": {
+                "nickname": {
+                  "type": "string"
+                },
+                "password": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "\u64cd\u4f5c\u6210\u529f",
+            "schema": {
+              "$ref": "#/definitions/ApiResponse"
+            }
+          },
+          "default": {
+            "description": "\u64cd\u4f5c\u5f02\u5e38,\u6267\u884c\u5931\u8d25.\u8fd4\u56de\u4fe1\u606f\u63cf\u8ff0\u9519\u8bef\u8be6\u60c5",
+            "schema": {
+              "$ref": "#/definitions/ErrorResponse"
+            }
+          }
+        }
+      }
+    },
+    "/user/information": {
+      "get": {
+        "tags": [
+          "\u7528\u6237"
+        ],
+        "summary": "\u83b7\u53d6\u7528\u6237\u81ea\u5df1\u4fe1\u606f",
         "responses": {
           "200": {
             "description": "\u64cd\u4f5c\u6210\u529f",

@@ -62,7 +62,7 @@ paths:
       parameters:
         - name: user
           in: body
-          descriptiom: 创建用户
+          description: 创建用户
           schema:
             properties:
               nickname:
@@ -74,7 +74,6 @@ paths:
                 pattern: ^[A-Za-z0-9_*&$#@]{6,22}$
                 minLength: 6
                 maxLength: 24
-
       responses:
         200:
           description: 操作成功
@@ -84,4 +83,48 @@ paths:
           description: 操作异常,执行失败.返回信息描述错误详情
           schema:
             $ref: '#/definitions/ErrorResponse'
+
+  /login:
+    post:
+      tags:
+        - 用户
+      summary: 登陆
+      security: []
+      parameters:
+        - name: user
+          in: body
+          description: 登陆
+          schema:
+            properties:
+              nickname:
+                type: string
+              password:
+                type: string
+      responses:
+        200:
+          description: 操作成功
+          schema:
+            $ref: '#/definitions/ApiResponse'
+        default:
+          description: 操作异常,执行失败.返回信息描述错误详情
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+  /user/information:
+    get:
+      tags:
+        - 用户
+      summary: 获取用户自己信息
+      responses:
+        200:
+          description: 操作成功
+          schema:
+            $ref: '#/definitions/ApiResponse'
+        default:
+          description: 操作异常,执行失败.返回信息描述错误详情
+          schema:
+            $ref: '#/definitions/ErrorResponse'
+
+
+
 

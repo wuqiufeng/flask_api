@@ -4,6 +4,10 @@
 # @Email   :
 # @File    : config.py
 # ---------------------
+"""
+
+
+
 import os
 
 
@@ -23,7 +27,11 @@ class Config:
     # 云片
     YUNPIAN_AK = "3dd31dd63fe4a849f9576531af5633db"
 
+
+
     UPLOAD_FOLDER = os.path.join(base_dir, "uploads")
+
+
 
 
 
@@ -46,3 +54,5 @@ config = {
     "development": DevConfig,
     "default": IntConfig
 }
+
+"""

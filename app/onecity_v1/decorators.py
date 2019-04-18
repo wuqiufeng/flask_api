@@ -5,17 +5,38 @@ from http.client import HTTPException
 import six
 from flask import current_app, request, json, g
 from flask_restful import unpack, abort
+from itsdangerous import BadData
 from werkzeug.datastructures import MultiDict
 
-from app import service_logger, error_logger
+from app import service_logger, error_logger, jwt
 from app.libs.error_code import AuthFailed, APIException, UnknownException, UnprocessableException
+from app.models import redis_client
 from app.onecity_v1.schemas import filters, normalize, resolver, scopes, validators, security
 from app.onecity_v1.validators import JSONEncoder, FlaskValidatorAdaptor
+from config import Config
 
 
 class Token():
     def __init__(self, token_value):
         self.value = token_value
+
+    def get_payload(self):
+        try:
+            return jwt.loads(self.value)
+        except BadData:
+            raise AuthFailed(msg='认证失败,请重新登陆')
+        except Exception as e:
+            raise e
+
+    @property
+    def name(self):
+        return self.get_payload()
+
+
+    @property
+    def requester(self):
+        # 每次调用刷新token时间
+        redis_client.expire('token:{}'.format(self.name), Config.JWT_EXP_TIME)
 
 
 def request_validate(view):
@@ -116,7 +137,7 @@ def api_logger(view):
             service_logger.warning("<Response [{}]>".format(e))
             raise APIException(msg, code, error_code)
         except Exception as e:
-            # print('eeee')
+            print('eeee')
             service_logger.critical("<Response [500 Internal Server Error]>")
             error_logger.error(_request_log(request))
             error_logger.error(e, exc_info=True)
@@ -131,8 +152,11 @@ def authentication(view):
         if not hasattr(g, "token"):
             raise AuthFailed("Token not found")
 
-        if g.token.value != 'aabbcc':
+        value = redis_client.get('token:{}'.format(g.token.name))
+        if g.token.value != value:
             raise AuthFailed("您的身份认证已经失效， 请重新登录")
+        # 刷新token时间
+        g.token.requester
         return view(*args, **kwargs)
 
     return wrapper
