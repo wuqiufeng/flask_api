@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="eecc598a-45bb-4a6e-bd8b-8480bb429134" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/libs/enums.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/log.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/log.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/models/user.py" beforeDir="false" afterPath="$PROJECT_DIR$/app/models/user.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +16,22 @@
     <SUITE FILE_PATH="coverage/flask_api$starter.coverage" NAME="starter Coverage Results" MODIFIED="1555588995518" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/flask_api$error_code.coverage" NAME="error_code Coverage Results" MODIFIED="1555470919961" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/app/libs" />
   </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="testRunner" value="GRADLE" />
+    <option name="delegatedBuild" value="true" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="300">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -96,10 +108,11 @@
         <option value="$PROJECT_DIR$/app/libs/enums.py" />
         <option value="$PROJECT_DIR$/app/models/user.py" />
         <option value="$PROJECT_DIR$/app/models/log.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" fullScreen="true">
     <option name="x" value="67" />
     <option name="y" value="27" />
     <option name="width" value="1329" />
@@ -111,6 +124,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,38 +132,20 @@
               <item name="flask_api" type="b2602c69:ProjectViewProjectNode" />
               <item name="flask_api" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="flask_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="models" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_api" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="flask_api" type="b2602c69:ProjectViewProjectNode" />
-              <item name="flask_api" type="462c0819:PsiDirectoryNode" />
-              <item name="tests" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vibora_api" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="go.gopath.indexing.explicitly.defined" value="true" />
+    <property name="go.import.settings.migrated" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
@@ -262,16 +258,22 @@
       <workItem from="1555573501807" duration="2220000" />
       <workItem from="1555578578040" duration="11891000" />
       <workItem from="1555637113797" duration="3535000" />
+      <workItem from="1556290238245" duration="394000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="100872000" />
+    <option name="totallyTimeSpent" value="101266000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1369" height="763" extended-state="6" />
+    <frame x="0" y="0" width="1280" height="800" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2944739" />
+      <window_info id="Designer" />
+      <window_info id="Image Layers" />
+      <window_info id="Capture Tool" />
+      <window_info id="UI Designer" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29886913" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -287,6 +289,11 @@
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5003785" side_tool="true" weight="0.32894737" />
       <window_info anchor="bottom" id="Terminal" order="11" sideWeight="0.4996215" weight="0.32894737" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Maven" />
+      <window_info anchor="right" id="Palette" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="right" id="Theme Preview" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -298,13 +305,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/flask_restful/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2220">
-          <caret line="542" column="6" selection-start-line="542" selection-start-column="6" selection-end-line="542" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/onecity_v1/schemas.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1530">
@@ -315,13 +315,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.6/configparser.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="958" selection-start-line="958" selection-end-line="958" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/python3.6/configparser.py" />
     <entry file="file://$PROJECT_DIR$/app/logging.conf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="265">
@@ -329,13 +323,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/sqlalchemy/orm/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="99" selection-start-line="99" selection-end-line="99" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/sqlalchemy/orm/__init__.py" />
     <entry file="file://$PROJECT_DIR$/app/utils/str_util.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -370,13 +358,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="676" column="13" selection-start-line="676" selection-start-column="13" selection-end-line="676" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/flask_sqlalchemy/__init__.py" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -387,35 +369,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/alembic/util/compat.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="843">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/click/decorators.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-60">
-          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/alembic/util/compat.py" />
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/click/decorators.py" />
     <entry file="file://$PROJECT_DIR$/app/models/db.py" />
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/sqlalchemy/sql/schema.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="2559" column="8" selection-start-line="2559" selection-start-column="8" selection-end-line="2559" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/pymysql/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="104">
-          <caret line="343" column="13" selection-start-line="343" selection-start-column="8" selection-end-line="343" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/sqlalchemy/sql/schema.py" />
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/pymysql/connections.py" />
     <entry file="file://$PROJECT_DIR$/app/onecity_v1/api/users.py" />
     <entry file="file://$PROJECT_DIR$/starter.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -424,13 +382,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/werkzeug/exceptions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="113">
-          <caret line="76" column="6" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/werkzeug/exceptions.py" />
     <entry file="file://$PROJECT_DIR$/app/services/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="122">
@@ -455,34 +407,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/flask/globals.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/http/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="1317" column="44" selection-start-line="1317" selection-start-column="44" selection-end-line="1317" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python3.6/logging/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="1297" column="8" selection-start-line="1297" selection-start-column="8" selection-end-line="1297" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/flask/app.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="174" column="4" selection-start-line="174" selection-start-column="4" selection-end-line="174" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/flask/globals.py" />
+    <entry file="file:///usr/lib/python3.6/http/client.py" />
+    <entry file="file:///usr/lib/python3.6/logging/__init__.py" />
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/flask/app.py" />
     <entry file="file://$PROJECT_DIR$/app/onecity_v1/api/register.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -531,13 +459,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file:///usr/lib/python3.6/json/encoder.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="118">
-          <caret line="179" selection-start-line="179" selection-end-line="179" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file:///usr/lib/python3.6/json/encoder.py" />
     <entry file="file://$PROJECT_DIR$/tests/test_redis.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="30">
@@ -545,13 +467,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/itsdangerous/jws.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="109">
-          <caret line="170" column="8" selection-start-line="170" selection-start-column="8" selection-end-line="170" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/itsdangerous/jws.py" />
     <entry file="file://$PROJECT_DIR$/app/onecity_v1/api/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -562,20 +478,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/redis/client.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="1241" column="33" lean-forward="true" selection-start-line="1241" selection-start-column="33" selection-end-line="1241" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/redis/connection.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="939" column="8" selection-start-line="939" selection-start-column="8" selection-end-line="939" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/redis/client.py" />
+    <entry file="file://$PROJECT_DIR$/../.local/share/virtualenvs/flask_api-NEe1upaw/lib/python3.6/site-packages/redis/connection.py" />
     <entry file="file://$PROJECT_DIR$/app/swagger/api.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1695">
@@ -681,6 +585,13 @@
           <folding>
             <element signature="e#24#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
         </state>
       </provider>
     </entry>
