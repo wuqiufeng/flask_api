@@ -25,6 +25,11 @@ build
 env
 
 
+# virtualenv
+.venv
+venv
+ENV
+
 #IntelliJ IDEA Files
 *.iml
 *.ipr
