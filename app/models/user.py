@@ -2,31 +2,32 @@ from sqlalchemy import Column, Integer, String, SmallInteger, FetchedValue, Fore
 from sqlalchemy.orm import relationship
 from werkzeug.security import generate_password_hash, check_password_hash
 
-from app.libs.enums import UserSuper
+from app.libs.enums import UserAdmin, UserActive
 from app.libs.error_code import NotFound, AuthFailed
-from app.models.base import InfoCrud as Base
+from app.models.base import InfoCrud, BaseCrud
 
 
-class User(Base):
+class User(InfoCrud):
     __tablename__ = 'user'
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     nickname = Column(String(32), unique=True)
-    # : super express the user is super(super admin) ;  1 -> common |  2 -> super
-    # : super 代表是否为超级管理员 ;  1 -> 普通用户 |  2 -> 超级管理员
-    # super = Column(SmallInteger, nullable=False, default=1, server_default=FetchedValue())
-    super = Column(SmallInteger, nullable=False, default=1)
+    # : admin express the user is admin(admin) ;  1 -> common |  2 -> admin
+    # : admin 代表是否为超级管理员 ;  1 -> 普通用户 |  2 -> 超级管理员
+    admin = Column(SmallInteger, nullable=False, default=1, server_default=FetchedValue(),
+                   comment="是否为超级管理员 ;  1 -> 普通用户 |  2 -> 超级管理员")
     # : active express the user can manage the authorities or not ; 1 -> active | 2 -> not
-    # : active 代表当前用户是否为激活状态，非激活状态默认失去用户权限 ; 1 -> 激活 | 2 -> 非激活
-    # active = Column(SmallInteger, nullable=False, default=1, server_default=FetchedValue())
-    active = Column(SmallInteger, nullable=False, default=1)
+    # : active 代表当前用户是否为激活状态，    active = Column(SmallInteger, nullable=False, default=1, server_default=FetchedValue(),非激活状态默认失去用户权限 ; 1 -> 激活 | 2 -> 非激活
+    active = Column(SmallInteger, nullable=False, default=1, server_default=FetchedValue(),
+                    comment="当前用户是否为激活状态，非激活状态默认失去用户权限 ; 1 -> 激活 | 2 -> 非激活")
 
+    # : which group the user belongs,nullable is true
     # : 用户所属的权限组id
     group_id = Column(Integer)
-
     _password = Column('password', String(100))
 
     # avatar_url = Column(String(128), comment='头像')
+    # email = Column(String(100), unique=True, comment="电子邮箱")
     # phone = Column(String(11), unique=True)
     # uuid = db.Column(db.String(255), unique=True)  # 唯一标识符
 
@@ -47,17 +48,27 @@ class User(Base):
         self._password = generate_password_hash(raw)
 
     @property
-    def is_super(self):
-        return self.super == UserSuper.SUPER.value
+    def is_admin(self):
+        return self.admin == UserAdmin.ADMIN.value
 
     @property
     def is_active(self):
         return self.active == UserActive.ACTIVE.value
 
+    @classmethod
+    def verify(cls, nickname, password):
+        raise Exception('must implement this method')
+
     def check_password(self, raw):
         if not self._password:
             return False
         return check_password_hash(self._password, raw)
+
+    def reset_password(self, new_password):
+        raise Exception('must implement this method')
+
+    def change_password(self, old_password, new_password):
+        raise Exception('must implement this method')
 
     @classmethod
     def find_user(cls, nickname):
@@ -73,7 +84,38 @@ class User(Base):
         return user
 
 
-class UserAuth(Base):
+
+
+
+class AuthInterface(BaseCrud):
+    __tablename__ = 'user_auth'
+
+    id = Column(Integer, primary_key=True)
+    # : belongs to which group
+    # : 所属权限组id
+    group_id = Column(Integer, nullable=False, comment="所属权限组id")
+    # : authority field
+    # : 权限字段
+    auth = Column(String(60), comment="权限字段")
+    # : authority module, default common , which can sort authorities
+    # : 权限的模块
+    module = Column(String(50), comment="权限的模块")
+
+
+class GroupInterface(BaseCrud):
+    __tablename__ = 'lin_group'
+
+    id = Column(Integer, primary_key=True)
+    # : name of group
+    # : 权限组名称
+    name = Column(String(60), comment="权限组名称")
+    # a description of a group
+    # 权限组描述
+    info = Column(String(255), comment="权限组描述")
+
+
+"""
+class UserAuth(BaseCrud):
     __tablename__ = 'user_auth'
     id = Column(Integer, primary_key=True, autoincrement=True)
     user_id = Column(Integer, ForeignKey('user.id'))
@@ -92,3 +134,4 @@ class UserAuth(Base):
             self.identifier,
             self.credential
         )
+"""

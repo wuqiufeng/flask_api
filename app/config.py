@@ -4,7 +4,7 @@
 # @Email   :
 # @File    : config.py
 # ---------------------
-"""
+
 
 
 
@@ -54,5 +54,3 @@ config = {
     "development": DevConfig,
     "default": IntConfig
 }
-
-"""

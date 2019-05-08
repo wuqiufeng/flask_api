@@ -1,10 +1,9 @@
 from datetime import datetime
 from sqlalchemy import Column, TIMESTAMP
-
 from app.models import db, MixinJSONSerializer
 from app.utils.str_util import camel2line
 
-
+# 基础的crud model
 class BaseCrud(db.Model, MixinJSONSerializer):
     __abstract__ = True
 
@@ -77,17 +76,6 @@ class InfoCrud(db.Model, MixinJSONSerializer):
             return None
         return int(round(self._create_time.timestamp() * 1000))
 
-    # @property
-    # def update_time(self):
-    #     if self._update_time is None:
-    #         return None
-    #     return int(round(self._update_time.timestamp() * 1000))
-
-    # @property
-    # def delete_time(self):
-    #     if self._delete_time is None:
-    #         return None
-    #     return int(round(self._delete_time.timestamp() * 1000))
 
     def set_attrs(self, attrs_dict):
         for key, value in attrs_dict.items():
@@ -123,10 +111,6 @@ class InfoCrud(db.Model, MixinJSONSerializer):
     def create(cls, **kwargs):
         one = cls()
         for key in kwargs.keys():
-            # if key == 'from':
-            #     setattr(one, '_from', kwargs[key])
-            # if key == 'parts':
-            #     setattr(one, '_parts', kwargs[key])
             if hasattr(one, key):
                 setattr(one, key, kwargs[key])
         db.session.add(one)
@@ -136,8 +120,6 @@ class InfoCrud(db.Model, MixinJSONSerializer):
 
     def update(self, **kwargs):
         for key in kwargs.keys():
-            # if key == 'from':
-            #     setattr(self, '_from', kwargs[key])
             if hasattr(self, key):
                 setattr(self, key, kwargs[key])
         db.session.add(self)

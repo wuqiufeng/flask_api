@@ -1,35 +1,37 @@
-from sqlalchemy import Integer, Column, String
+from datetime import datetime
 
-from app import db
-from app.models.base import InfoCrud as Base
+from sqlalchemy import Integer, Column, String, DateTime
+from app.models.base import BaseCrud
 
 
-class Log(Base):
+class LogInterface(BaseCrud):
     __tablename__ = 'log'
 
     id = Column(Integer, primary_key=True)
-
     # : log message
     # : 日志信息
-    message = Column(String(450))
+    message = Column(String(450), comment="日志信息")
     # : create time
     # : 日志创建时间
-    _time = Column('time', TIMESTAMP(True), default=datetime.now)
+    _time = Column('time', DateTime, default=datetime.now, comment="日志创建时间")
     # : user id
     # : 用户id
-    user_id = Column(Integer, nullable=False)
+    user_id = Column(Integer, nullable=False, comment="用户id")
     # user_name at that moment
     # 用户当时的昵称
-    user_name = Column(String(20))
+    user_name = Column(String(20), comment="用户当时的昵称")
     # : status_code check request is success or not
     # : 请求的http返回码
-    status_code = Column(Integer)
+    status_code = Column(Integer, comment="请求的http返回码")
     # request method
     # 请求方法
-    method = Column(String(20))
+    method = Column(String(20), comment="请求方法")
     # request path
     # 请求路径
-    path = Column(String(50))
+    path = Column(String(50), comment="请求路径")
+    # which authority is accessed
+    # 访问哪个权限
+    authority = Column(String(100), comment="访问哪个权限")
 
     @property
     def time(self):
@@ -37,24 +39,15 @@ class Log(Base):
             return None
         return int(round(self._time.timestamp() * 1000))
 
-    @staticmethod
-    def create_log(**kwargs):
-        log = Log()
-        for key in kwargs.keys():
-            if hasattr(log, key):
-                setattr(log, key, kwargs[key])
-        db.session.add(log)
-        if kwargs.get('commit') is True:
-            db.session.commit()
-        return log
 
-
+"""
 import re
 from functools import wraps
 from flask import Response, request
 
 REG_XP = r'[{](.*?)[}]'
 OBJECTS = ['user', 'response', 'request']
+
 
 
 class Logger(object):
@@ -69,33 +62,6 @@ class Logger(object):
         self.message = ''
         self.response = None
         self.user = None
-
-    """
-    def __call__(self, func):
-        @wraps(func)
-        def wrap(*args, **kwargs):
-            response: Response = func(*args, **kwargs)
-            self.response = response
-            self.user = get_current_user()
-            self.message = self._parse_template()
-            self.write_log()
-            return response
-
-        return wrap
-
-
-    def write_log(self):
-        info = find_info_by_ep(request.endpoint)
-        authority = info.auth if info is not None else ''
-        status_code = getattr(self.response, 'status_code', None)
-        if status_code is None:
-            status_code = getattr(self.response, 'code', None)
-        if status_code is None:
-            status_code = 0
-        Log.create_log(message=self.message, user_id=self.user.id, user_name=self.user.nickname,
-                       status_code=status_code, method=request.method,
-                       path=request.path, authority=authority, commit=True)
-"""
 
 
     # 解析自定义模板
@@ -116,3 +82,4 @@ class Logger(object):
                 item = getattr(request, prop, '')
             message = message.replace('{%s}' % it, str(item))
         return message
+"""

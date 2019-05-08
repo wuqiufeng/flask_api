@@ -1,11 +1,11 @@
 from enum import Enum
 
 
-# status for user is super
+# status for user is admin
 # 是否为超级管理员的枚举
-class UserSuper(Enum):
+class UserAdmin(Enum):
     COMMON = 1
-    SUPER = 2
+    ADMIN = 2
 
 
 # : status for user is active
